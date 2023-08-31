@@ -1,7 +1,18 @@
 /*---------------------------------------------------------------GENERAL---------------------------------------------------------------*/
+/*COLOR PALETTE*/
+:root{
+    --shark:#22252a;
+    --lola:#dacdd3;
+    --dorado: #705958;
+    --corius-blue: #25a7c5;
+    --jelly-bean: #2d849d;
+    --bizarre: #F1DCDD;
+}
+
 html{
     scroll-behavior: smooth;
 }
+
 header{
     position: fixed;
     display: flex;
@@ -10,14 +21,21 @@ header{
     width: 100%;
     transition: 500ms ease-in-out;
 }
+
 body{
-    background-color: #24262c;
+    background-color: var(--shark);
     font-family: Gibson;
     margin: auto;
 }
+
 .general_container{
     margin: auto;
 }
+
+.Montserrat-regular{
+    font-family: Montserrat-Regular;
+}
+
 /*--------------------------------Navigation Bar--------------------------------*/
 .logo_container{
     float: left;
@@ -152,6 +170,7 @@ body{
 }
 
 /*--------------------------------Footer--------------------------------*/
+
 .footer{
     background-color: #000000;
     color: #ffffff;
@@ -161,6 +180,7 @@ body{
 }.footer a:link, a:visited{
     text-decoration: none;
 }
+
 /*---------------------------------------------------------------END GENERAL---------------------------------------------------------------*/
 
 
@@ -175,10 +195,9 @@ body{
 .principal_landing{
     padding: 10%;
     background-image: url('/assets/images/background_index.jpg');
-    background-color: #000000;
     background-position: -9cm 125cm;
     background-size: 194%;
-    height: 55vh;
+    height: 60vh;
     color: #000000;
 }
 .index_buttons{
@@ -189,7 +208,7 @@ body{
 }
 
 .about_us{
-    background-color: #9BA5C9;
+    background-color: var(--bizarre);
     padding: 10%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -341,10 +360,11 @@ body{
 .description_a{
     font-size: 20px;
     grid-column: 1/3;
+    background: #000000;
 }.photo_a{
     width: 100%;
-    grid-column: 3/5;
-    grid-row: 1/4;
+    grid-column: 1/3;
+
     display: block;
     margin: auto;
 }
@@ -354,9 +374,9 @@ body{
 .boton_a{
     text-transform: uppercase;
     font-size: 20px;
-    background-color: #FA4753;
+    background-color: var(--shark);
     color: #ffffff;
-    border: solid 1px #FA4753;
+    border: solid 1px #000000;
 }
 
 .boton_b{
@@ -371,7 +391,9 @@ body{
     margin: auto;
 }
 
-/*---------------------------------------------------------------RESPONSIVE---------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------WEB RESPONSIVE---------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 1290px){
     .description_a {
