@@ -46,10 +46,33 @@ body{
     margin: auto;
 }
 
+/*------------------------------FONTS-------------------------*/
 .Montserrat-regular{
     font-family: Montserrat-Regular;
 }
+.Montserrat-Bold{
+    font-family: Montserrat-Bold;
+}.Montserrat-Black{
+    font-family: Montserrat-Black;
+}
 
+.Gilroy-Bold{
+    font-family: Gilroy-Bold;
+}.Gilroy-Black{
+    font-family: Gilroy-Black;
+}
+/*------------------------------FONTS-------------------------*/
+
+/*------------------------------TEXT FORMAT-------------------*/
+.uppercase{
+    text-transform: uppercase;
+    justify-items: center;
+}
+.center-text{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
 .center-text-absolute{
     position: absolute;
     text-align: center;
@@ -59,6 +82,7 @@ body{
     top: 50%;
     left: 50%;
 }
+/*------------------------------TEXT FORMAT-------------------*/
 
 /*--------------------------------Navigation Bar--------------------------------*/
 .logo_container{
@@ -73,13 +97,13 @@ body{
     width: 60%;
     display: flex;
     justify-content: flex-end;
-    margin-right: 10%;
+    margin-right: 7%;
     color: #000000;
 }
 .menu_item{
     color: #000000;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 18px;
     border: none;
     margin: 0 2%;
     border-bottom: solid 1px #ffffff00;
@@ -342,14 +366,15 @@ main {
     text-decoration: none;
 }
 
-.main-video{
+.main-landing-source{
+    background-image: url(/assets/images/pexels-eberhard-grossgasteiger-1366919.jpg);
+    background-position: center center;
+    background-size: cover;
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     z-index: 1;
+    object-fit:contain;
 }
 
 .principal_landing{
@@ -357,7 +382,11 @@ main {
     color: #000000;
     z-index: 9;
     position: relative;
+}.principal_landing h1{
+    font-size: 75px;
+    margin-top: 15%;
 }
+
 .index_buttons{
     padding-top: 1%;
     padding-bottom: 1%;
