@@ -9,11 +9,15 @@ window.addEventListener('scroll',() => {
     //Para cuando baja
     if(scroll > 10){
         logo.src="./assets/images/TerraValorLogoBlanco.svg";
+        logo.style.marginLeft = '10%'
+        logo.style.width = '70%'
         header.style.backgroundColor = '#121212';
         menu_bar.classList.add('menu_item_alternate');
         toggle.style.backgroundColor = '#ffffff';
     }else{//Cualquier otro caso
         menu_bar.classList.remove('menu_item_alternate');
+        logo.style.marginLeft = '0%'
+        logo.style.width = '100%'
         logo.src="./assets/images/TerraValorLogo.svg";
         header.style.backgroundColor = 'transparent';
         menu_bar.style.color='#000000';

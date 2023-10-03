@@ -1,14 +1,12 @@
 /*---------------------------------------------------------------GENERAL---------------------------------------------------------------*/
-/*COLOR PALETTE*/
+
+/*------------------------------COLOR PALETTE------------------------------*/
 :root{
-    --loader-theme: #090707;
+    --loaderTheme: #090707;
     --shark:#22252a;
-    --lola:#dacdd3;
-    --dorado: #705958;
-    --corius-blue: #25a7c5;
-    --jelly-bean: #2d849d;
-    --bizarre: #F1DCDD;
+    --blueGray: #cad2d5;
 }
+/*------------------------------COLOR PALETTE------------------------------*/
 
 html{
     scroll-behavior: smooth;
@@ -38,7 +36,6 @@ header{
 
 body{
     background-color: var(--shark);
-    font-family: Gibson;
     margin: auto;
 }
 
@@ -47,16 +44,27 @@ body{
 }
 
 /*------------------------------FONTS-------------------------*/
-.Montserrat-regular{
+.Montserrat-Thin{
+    font-family: Montserrat-Thin;
+}.Montserrat-Regular{
     font-family: Montserrat-Regular;
-}
-.Montserrat-Bold{
+}.Montserrat-Extra-Light{
+    font-family: Montserrat-Extra-Light;
+}.Montserrat-Medium{
+    font-family:Montserrat-Medium;
+}.Montserrat-SemiBold{
+    font-family:Montserrat-SemiBold;
+}.Montserrat-Bold{
     font-family: Montserrat-Bold;
 }.Montserrat-Black{
     font-family: Montserrat-Black;
 }
 
-.Gilroy-Bold{
+.Gilroy-Regular{
+    font-family:Gilroy-Regular;
+}.Gilroy-Medium{
+    font-family:Gilroy-Medium;
+}.Gilroy-Bold{
     font-family: Gilroy-Bold;
 }.Gilroy-Black{
     font-family: Gilroy-Black;
@@ -69,9 +77,10 @@ body{
     justify-items: center;
 }
 .center-text{
+    display: block;
+    margin: auto;
     text-align: center;
     justify-content: center;
-    display: flex;
 }
 .center-text-absolute{
     position: absolute;
@@ -90,6 +99,9 @@ body{
     width: 10%;
     margin-left: 10%;
     margin-top: 20px;
+    transition: 250ms ease-in-out;
+}.logo{
+    width: 100%;
     transition: 250ms ease-in-out;
 }
 .menu_bar{
@@ -227,7 +239,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #090707;
+    background: var(--loaderTheme);
     position: fixed;
     z-index: 12;
     transition: all ease-in-out 750ms;
@@ -359,9 +371,9 @@ main {
 
 /*---------------------------------------------------------------INDEX---------------------------------------------------------------*/
 .general_container{
-    background-image: url(/assets/images/background_index.jpg);
-    font-size: 70px;
     min-height: 100vh;
+    background-image: url('/assets/images/body-bg.jpg');
+    background-size: contain;
 }.general_container a:link, a:visited{
     text-decoration: none;
 }
@@ -369,22 +381,21 @@ main {
 .main-landing-source{
     background-image: url(/assets/images/pexels-eberhard-grossgasteiger-1366919.jpg);
     background-position: center center;
-    background-size: cover;
-    position: absolute;
+    background-size:cover;
     width: 100%;
-    height: 100%;
-    z-index: 1;
-    object-fit:contain;
+    height: 100vh;
+    object-fit:cover;
+    overflow-x: hidden;
 }
 
 .principal_landing{
-    padding: 10%;
     color: #000000;
     z-index: 9;
     position: relative;
 }.principal_landing h1{
     font-size: 75px;
-    margin-top: 15%;
+    margin-top: 20%;
+    
 }
 
 .index_buttons{
@@ -394,23 +405,26 @@ main {
     padding-left: 5%;
 }
 
-.element_a{
+.index-sector-a{
+    background-color: var(--blueGray);
+}
+
+.index-sector-b{
 
 }
 
-.element_b{
+.about-us{
+    margin: 5% 0;
+    min-height:90vh;
 
-}
-
-.about_us{
-    background-color: var(--bizarre);
-    padding: 10%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-}.about_us h1{
-    grid-column: 1/3;
+}.about-us h1{
+    padding: 5%;
+    font-size: 70px;
+}.about-us p{
+    margin-top: 20%;
     font-size: 70px;
 }
+
 .services{
     background-color: #FA4753;
     padding: 12% 5%;
