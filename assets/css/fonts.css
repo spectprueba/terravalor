@@ -17,23 +17,23 @@
 /* ---------------------------------------GILROY--------------------------------------- */
 @font-face {
     font-family:Gilroy-Regular;
-    src: url(../fonts/Gilroy-Regular.ttf) format('truetype');
+    src: url(../fonts/Gilroy/Gilroy-Regular.ttf) format('truetype');
 }
 @font-face {
     font-family:Gilroy-Medium;
-    src: url(../fonts/Gilroy-Medium.ttf) format('truetype');
+    src: url(../fonts/Gilroy/Gilroy-Medium.ttf) format('truetype');
 }
 @font-face {
     font-family:Gilroy-Light;
-    src: url(../fonts/Gilroy-Light.ttf) format('truetype');
+    src: url(../fonts/Gilroy/Gilroy-Light.ttf) format('truetype');
 }
 @font-face {
     font-family:Gilroy-Bold;
-    src: url(../fonts/Gilroy-Bold.ttf) format('truetype');
+    src: url(../fonts/Gilroy/Gilroy-Bold.ttf) format('truetype');
 }
 @font-face {
     font-family:Gilroy-Black;
-    src: url(../fonts/Gilroy-Black.ttf) format('truetype');
+    src: url(../fonts/Gilroy/Gilroy-Black.ttf) format('truetype');
 }
 
 /* ---------------------------------------MONTSERRAT--------------------------------------- */
@@ -64,4 +64,13 @@
 @font-face {
     font-family:Montserrat-Black;
     src: url(../fonts/Montserrat/Montserrat-Black.ttf);
+}
+/* ---------------------------------------GOTHAM--------------------------------------- */
+@font-face {
+    font-family:Gotham-Ligth;
+    src: url(../fonts/Gotham/GothamLight.ttf);
+}
+@font-face {
+    font-family:Gotham-Medium;
+    src: url(../fonts/Gotham/GothamMedium.ttf);
 }

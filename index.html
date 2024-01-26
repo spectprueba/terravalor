@@ -11,7 +11,8 @@
         <!--FONTS-->
         <link rel="stylesheet" type="text/css" href="/assets/css/fonts.css">
         <!--CSS-->
-        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
 
     </head>
 
@@ -57,19 +58,24 @@
         </main>
         <!--END LOADER-->
 
-        <div class="general_container">
+        <div class="not-aviable Gilroy-Light">
+            <img src="./assets/images/TerraValorLogoBlanco.svg" alt="">
+            <h1 class="center-text">Lo sentimos 😓 <br> Esta página no está disponible para tu dispositivo en este momento <br> estamos trabajando en ello.💪</h1>
+        </div>
+
+        <div class="general-container">
 
             <header id="header">
                 
                 <div class="logo_container">
-                    <a href="index.html" class=""> <img src="./assets/images/TerraValorLogo.svg" class="logo" id="menu_logo" alt=""> </a>
+                    <a href="/index.html" class=""> <img src="./assets/images/TerraValorLogo.svg" class="logo" id="menu_logo" alt=""> </a>
                 </div>
 
                 <nav class="menu_bar Montserrat-Regular" id="menu_bar">
-                    <a class="menu_item" href="#about_us">Acerca de nosotros</a>
+                    <a class="menu_item" href="#about-us">Acerca de nosotros</a>
                     <a class="menu_item" href="#services">Servicios</a>
-                    <a class="menu_item" href="#contact_us">Contacto</a>
-                    <a class="menu_item" href="#experience">Experiencia</a>
+                    <a class="menu_item" href="#contact-us">Contacto</a>
+                    <!-- <a class="menu_item" href="#experience">Experiencia</a> -->
                 </nav>
 
                 <nav class="toggle" id="toggle">
@@ -81,100 +87,186 @@
                 <div class="container_toggle_bar" id="container_toggle_bar">
                     <div class="cont_toggle_bar" id="cont_toggle_bar">
                         <nav id="nav_bar">
-                            <a href="#about_us">Acerca de nosotros</a>
+                            <a href="#about-us">Acerca de nosotros</a>
                             <a href="#services">Servicios</a>
                             <a href="#contact_us">Contacto</a>
-                            <a href="#experience">Experiencia</a>
+                            <!-- <a href="#experience">Experiencia</a> -->
                         </nav>
                     </div>
                 </div>
 
             </header>
-
-                <!-- <video muted autoplay loop src="./assets/videos/mountain.mp4" type="video/mp4" class="main-video"></video> -->
-                <div class=""></div>
                 
-                <div class="principal_landing main-landing-source">
+            <!-- WELCOME -->
+            <div class="principal-landing main-landing-source">
 
-                    <h1 class="Montserrat-Thin center-text ">Bienvenido</h1>
+                <h1 class="Montserrat-Thin center-text ">Bienvenido</h1>
+            
+            </div>
+
+            <!-- ABOUT US -->
+            <div class="about-us" id="about-us"> 
                 
+                <div class="about-us-container Gotham-Ligth">
+
+                    <img src="./assets/images/TerraValorLogoBlanco.svg" alt="">
+    
+                    <p>
+                        Terra Valor ofrece soluciones integrales y sostenibles para el sector inmobiliario.
+                        Los servicios ofrecidos por TerraValor abarcan Valoración de activos, Tecnologías Geoespaciales, Consultoría Técnica, 
+                        Video Inmobiliario y Topografía. Desde su perspectiva especializada TerrraValor presenta una visión integral en cada uno 
+                        de los servicios que presta, destacando su compromiso en ofrecer soluciones sostenibles adaptadas a las necesidades de sus clientes.
+                        Para Terra Valor es crucial reconocer las limitaciones inherentes al sector inmobiliario. Comprender estas restricciones es 
+                        fundamental para ofrecer servicios de alta calidad y soluciones sostenibles, es así como Terra Valor presta servicios al sector público 
+                        y privado, con alto compromiso y se adecua a las necesidades específicas de cada cliente 
+                    </p>
+
                 </div>
+            </div>
+            <!-- ABOUT US -->
 
-                <!-- ABOUT US -->
-                <div class="about-us index-sector-a" id="about_us"> 
+            <!-- SERVICES -->
+            <div class="services" id="services">
 
-                    <h1 class="Gilroy-Black center-text"> ¿Qué hacemos? </h1>
-                    
-                    <div class="terravalor-services-info Gilroy-Regular">
+                <h1 class="Gilroy-Bold center-text">SERVICIOS</h1>
 
-                        <div class="drone center-text">
-                            <h1>Dron</h1>
-                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, magnam! Quisquam dolore quidem ipsam in, qui quod nisi numquam. Reiciendis, esse iure? Aperiam reiciendis dignissimos rerum cupiditate non suscipit atque?</p>
-                            <a href="" class="button-black"> más información </a>
+                <div class="slider-services-container">
+
+                    <!-- Items of the slider -->
+                    <div class="slide active">
+
+                        <!-- Image of the service -->
+                        <img src="./assets/images/service01.jpg" alt="">
+
+                        <!-- Content of the service -->
+                        <div class="content">
+                            <h2 class="Gilroy-Bold"> Valoración de activos</h2>
+                            <p  class="Gilroy-Light">Determinación del valor de diversos tipos de activos tangibles e intangibles, bienes inmuebles, muebles, activos de propiedad intelectual, empresas en marcha</p>
+                            <br>
+                            <a href="./en-proceso.html" class="Gilroy-Bold"> INFORMACIÓN </a>
                         </div>
+                    </div>
 
-                        <div class="appraisals center-text">
-                            <h1>Avalúos</h1>
-                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, magnam! Quisquam dolore quidem ipsam in, qui quod nisi numquam. Reiciendis, esse iure? Aperiam reiciendis dignissimos rerum cupiditate non suscipit atque?</p>
-                            <a href="" class="button-black"> más información </a>
+                    <div class="slide">
+
+                        <!-- Image of the service -->
+                        <img src="./assets/images/service02.jpg" alt="">
+
+                        <div class="content">
+                            <h2 class="Gilroy-Bold"> Tecnologías Geoespaciales</h2>
+                            <p  class="Gilroy-Light">Captura, almacenamiento, análisis, gestión y visualización de información geográfica o espacial</p>
+                            <br>
+                            <a href="./en-proceso.html" class="Gilroy-Bold"> INFORMACIÓN </a>
                         </div>
+                    </div>
 
-                        <div class="measures center-text">
-                            <h1>Mediciones</h1>
-                            <p class="justify-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, magnam! Quisquam dolore quidem ipsam in, qui quod nisi numquam. Reiciendis, esse iure? Aperiam reiciendis dignissimos rerum cupiditate non suscipit atque?</p>
-                            <a href="" class="button-black"> más información </a>
+                    <div class="slide">
+
+                        <!-- Image of the service -->
+                        <img src="./assets/images/service03.jpg" alt="">
+
+                        <div class="content">
+                            <h2 class="Gilroy-Bold"> Consultoría Técnica</h2>
+                            <p  class="Gilroy-Light">Evaluaciones, acompañamiento y capacitación o análisis detallados sobre situaciones particulares</p>
+                            <br>
+                            <a href="./en-proceso.html" class="Gilroy-Bold"> INFORMACIÓN </a>
                         </div>
+                    </div>
 
+                    <div class="slide">
+
+                        <!-- Image of the service -->
+                        <img src="./assets/images/service04.jpg" alt="">
+
+                        <div class="content">
+                            <h2 class="Gilroy-Bold"> Video y fotografía inmobiliaria</h2>
+                            <p  class="Gilroy-Light">Creación de material audiovisual desde diferentes perspectivas aéreas y terrestres para el sector inmobiliario</p>
+                            <br>
+                            <a href="./en-proceso.html" class="Gilroy-Bold"> INFORMACIÓN </a>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+
+                        <!-- Image of the service -->
+                        <img src="./assets/images/service05.jpg" alt="">
+
+                        <div class="content">
+                            <h2 class="Gilroy-Bold"> Topografía</h2>
+                            <p  class="Gilroy-Light">Representación de la superficie u objetos, curvas de nivel, levantamiento detallado de estructuras, planos, etc</p>
+                            <br>
+                            <a href="./en-proceso.html" class="Gilroy-Bold"> INFORMACIÓN </a>
+                        </div>
+                    </div>
+
+                    <!-- THUMBNAILS -->
+                    <div class="thumbnail">
+                        <div class="item active">
+                            <img src="./assets/images/thumbnail-active.svg">
+                        </div>
+                        <div class="item">
+                            <img src="./assets/images/thumbnail-active.svg">
+                        </div>
+                        <div class="item">
+                            <img src="./assets/images/thumbnail-active.svg">
+                        </div>
+                        <div class="item">
+                            <img src="./assets/images/thumbnail-active.svg">
+                        </div>
+                        <div class="item">
+                            <img src="./assets/images/thumbnail-active.svg">
+                        </div>
                     </div>
 
                 </div>
+            </div>
+            <script src="./assets/js/services-slider.js"></script>
+            <!-- SLIDER JS -->
+            <!-- SERVICES -->
+
+            <!-- HERE GOES THE EXPERIENCE PART -->
                 
-                <!-- CONTACT US -->
-                <div class="contact-us index-sector-b" id="contact_us">
-                    <h1 class="Gilroy-Black center-text"> Contactenos </h1>
-                    <div class="contact-sources Gilroy-Regular">
+            <!-- CONTACT US -->
+            <div class="contact-us" id="contact-us">
 
-                        <div class="contact-sources--left-col">
-                            <p>
-                                <h3>phone</h3>
-                                +506 8344 3610
-                            </p>
-                            
-                            <p>
-                                <h3>email</h3>
-                                info@terravalorcr.com
-                            </p>
+                <h1 class="Gilroy-Bold center-text">CONTACTENOS</h1>
+                
+                <div class="contact-us-container Gilroy-Regular">
 
-                            <p>
-                                <h3>address</h3>
-                                Everywhere❤
-                            </p>
-                        </div>
-
-                        <div class="contact-sources--right-col">
-                            <img src="./assets/images/TerraValorLogo.svg" alt="">
-                            <!-- links WhatsApp Facebook LinkedIn -->
-                            <div class="links">
-                                <li> <a class="Facebook" target="_blank" href=""></a> </li>
-                                <li> <a class="Email" target="_blank" href=""> </a> </li>
-                                <li> <a class="WhatsApp" target="_blank" href=""></a> </li>
-                                <li> <a class="LinkedIn" target="_blank" href=""></a> </li>
-                            </div>
-                        </div>
-
+                    <div class="contact-sources--left-col">
+                        <p>
+                            <h3>phone</h3>
+                            +506 8426 4310
+                        </p>
+                        
+                        <p>
+                            <h3>email</h3>
+                            ecordero@terravalorcr.com
+                        </p>
                     </div>
-                </div>
 
-                <div class="experience index-sector-a" id="experience">
-                    <h1 class="Gilroy-Black right-text"> Experiencia </h1>
+                    <div class="contact-sources--right-col">
+                        <img src="./assets/images/TerraValorLogoBlanco.svg" alt="">
+                        <!-- links WhatsApp Facebook LinkedIn -->
+                        <div class="links">
+                            <li> <a class="Facebook" target="_blank" href=""></a> </li>
+                            <li> <a class="Email" target="_blank" href=""> </a> </li>
+                            <li> <a class="WhatsApp" target="_blank" href=""></a> </li>
+                            <li> <a class="Instagram" target="_blank" href="https://www.instagram.com/terravalorcr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="></a> </li>
+                        </div>
+                    </div>
+
                 </div>
+            </div>
+            <!-- CONTACT US -->
 
         </div>
 
-        <div class="footer">
-            Powered by <a target="_blank" href="https://spectcr.com/">SPECT ❤⚡</a> 2022
-            <p>HERE GOES THE FOOTER</p>
+        <div class="footer Montserrat-Thin">
+            <p>©TerraValor 2022</p>
+            Powered by <a target="_blank" href="https://spectcr.com/"> <b>SPECT ❤</b>⚡</a> 2022
         </div>
+
         <script src="./assets/js/index.js"></script>
         <script src="./assets/js/loader.js"></script>
     </body>
