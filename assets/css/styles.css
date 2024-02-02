@@ -561,11 +561,12 @@ main {
 
 .content a{
     transition: all ease-in-out 250ms;
-    margin: 2% auto;
+    padding: 20px !important;
     color: #000;
     background-color: #fff;
     padding: 15px;
     border-radius: 7px 0px 7px 0px;
+    
 }.content a::after{
     text-decoration: none;
     color: #fff;
