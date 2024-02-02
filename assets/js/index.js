@@ -1,27 +1,60 @@
 var header = document.getElementById('header');
 
 //Para cambiar la barra superior del menu y ponerla oscura
+
 window.addEventListener('scroll',() => {
+    var Width = 0;
+    Width = document.documentElement.clientWidth;
     var logo = document.getElementById('menu_logo');
     var menu_bar = document.getElementById('menu_bar');
     var toggle = document.getElementById('toggle');
     var scroll = window.scrollY;
-    //Para cuando baja
-    if(scroll > 10){
-        logo.src="./assets/images/TerraValorLogoBlanco.svg";
-        logo.style.marginLeft = '10%'
-        logo.style.width = '70%'
-        header.style.backgroundColor = '#121212';
-        menu_bar.classList.add('menu_item_alternate');
-        toggle.style.backgroundColor = '#ffffff';
-    }else{//Cualquier otro caso
-        menu_bar.classList.remove('menu_item_alternate');
-        logo.style.marginLeft = '0%'
-        logo.style.width = '100%'
-        logo.src="./assets/images/TerraValorLogo.svg";
-        header.style.backgroundColor = 'transparent';
-        menu_bar.style.color='#000000';
-        toggle.style.backgroundColor = '#B29FBB';
+
+    switch (true) {
+
+        // 1366+ resolutions
+        default:
+            //When it goes down
+            if(scroll > 10){
+                logo.src="./assets/images/TerraValorLogoBlanco.svg";
+                logo.style.marginLeft = '10%'
+                logo.style.width = '70%'
+                header.style.backgroundColor = '#121212';
+                menu_bar.classList.add('menu_item_alternate');
+                toggle.style.backgroundColor = '#ffffff';
+            }else{
+                //Otherwise
+                menu_bar.classList.remove('menu_item_alternate');
+                logo.style.marginLeft = '0%'
+                logo.style.width = '100%'
+                logo.src="./assets/images/TerraValorLogo.svg";
+                header.style.backgroundColor = 'transparent';
+                menu_bar.style.color='#000000';
+                toggle.style.backgroundColor = '#B29FBB';
+            }
+        break
+
+        // 1366 resolution
+        case Width <= 1366:
+            //When it goes down
+            if(scroll > 10){
+                logo.src="./assets/images/TerraValorLogoBlanco.svg";
+                logo.style.marginLeft = '10%'
+                logo.style.width = '90%'
+                header.style.backgroundColor = '#121212';
+                menu_bar.classList.add('menu_item_alternate');
+                toggle.style.backgroundColor = '#ffffff';
+            }else{
+                //Otherwise
+                menu_bar.classList.remove('menu_item_alternate');
+                logo.style.marginLeft = '0%'
+                logo.style.width = '100%'
+                logo.src="./assets/images/TerraValorLogo.svg";
+                header.style.backgroundColor = 'transparent';
+                menu_bar.style.color='#000000';
+                toggle.style.backgroundColor = '#B29FBB';
+            }
+        break
     }
 })
 
